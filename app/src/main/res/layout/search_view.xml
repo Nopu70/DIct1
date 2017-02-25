@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@android:color/white">
+    <LinearLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <AutoCompleteTextView
+            android:id="@+id/inputEdit"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:lines="1"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_width="224dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:id="@+id/searchIb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_search"/>
+    </LinearLayout>
+
+</LinearLayout>

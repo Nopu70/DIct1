@@ -1,0 +1,64 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbarl"/>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/homeFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="left"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+                <com.nopu70.fragment.menu.LeftMenuActivity
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.nopu70.fragment.menu.LeftMenuActivity>
+            </LinearLayout>
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+    <com.nopu70.myview.PullDoorView
+        android:id="@+id/pdvPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_hint"
+            android:text="点击播放，上滑跳过"
+            android:textSize="18sp"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </com.nopu70.myview.PullDoorView>
+
+</RelativeLayout>

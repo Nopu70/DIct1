@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DICT</string>
+    <string name="action_settings">Settings</string>
+    
+    <array name="language">
+        <item>自动检测</item>
+        <item>中文</item>
+        <item>英语</item>
+        <item>日语</item>
+        <item>韩语</item>
+        <item>西班牙语</item>
+        <item>法语</item>
+        <item>泰语</item>
+        <item>阿拉伯语</item>
+        <item>俄罗斯语</item>
+        <item>葡萄牙语</item>
+        <item>德语</item>
+        <item>意大利语</item>
+        <item>荷兰语</item>
+        <item>希腊语</item>
+    </array>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+</resources>

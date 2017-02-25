@@ -1,0 +1,51 @@
+span.prop {
+      position: absolute;
+      width: 90px;
+      height: 100%;
+      line-height: 38px;
+      color: #327cb0;
+      font-size: 18px;
+      font-family: arial, sans-serif, "microsoft yahei", simhei;
+      text-align: center;
+      background: #daedfb;
+}
+
+ul.lp {
+    margin-left: 80px;
+    min-height: 38px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #1a1b1d;
+    line-height: 38px;
+}
+
+li{
+    display: block;
+    position: relative;
+    background: #f5f9fc;
+    margin :0;
+}
+
+p {
+    margin : 0 0 2px 80px;
+    min-height: 38px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #1a1b1d;
+    line-height: 38px;
+}
+
+ul.base {
+margin: 0;
+padding-left: 10px;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+
+img {
+	width:20px;
+	height:20px;
+}

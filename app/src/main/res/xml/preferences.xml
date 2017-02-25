@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="dcitR"
+        android:title="单词来源">
+        <CheckBoxPreference
+            android:key="setDictR"
+            android:title="设置单词来源"
+            android:summary="优先使用网络词库"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="backNotifi"
+        android:title="后台提醒">
+        <SwitchPreference
+            android:key="setBackNotifi"
+            android:title="设置后台提醒"
+            android:summary="开／关"/>
+    </PreferenceCategory>
+
+    <com.nopu70.myview.DialogPre
+        android:key="about"
+        android:title="关于"
+        android:dialogMessage="by/nopu70"
+        android:positiveButtonText="CANCEL"
+        android:negativeButtonText="OK"/>
+
+    <PreferenceCategory>
+        <Preference
+            android:key="exit"
+            android:title="退出"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

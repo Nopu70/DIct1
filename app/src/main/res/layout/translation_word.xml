@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/sound"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/amTxt"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/amIBtn"
+                android:visibility="gone"
+                android:background="@drawable/sound"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/emTxt"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:visibility="gone"
+                android:id="@+id/emIBtn"
+                android:background="@drawable/sound"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/sound"
+        android:layout_above="@+id/btls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/conWeb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/btls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <LinearLayout
+            android:id="@+id/addWord"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/color_b"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_margin="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/add_word"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="生词库"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/color_b"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_margin="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/quit"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="退出"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tran"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/color_b"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_margin="10dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/left_translation"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="查询"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

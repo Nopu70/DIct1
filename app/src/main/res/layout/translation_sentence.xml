@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@color/bw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/sentence"
+            android:gravity="left"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Spinner
+                android:layout_width="0dp"
+                android:id="@+id/sSrc"
+                android:layout_weight="2"
+                android:entries="@array/language"
+                android:layout_height="match_parent">
+            </Spinner>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/translate_to"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/sDect"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:entries="@array/language"
+                android:layout_height="match_parent">
+            </Spinner>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/rtSentence"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btnTs"
+            android:text="查询"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
